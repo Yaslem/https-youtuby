@@ -176,6 +176,11 @@ time {
 .search-input:focus {
     background-color: #efeeee;
 }
+.navbar-nav-links {
+    flex-direction: row;
+    column-gap: 20px;
+    text-align: center;
+}
 /*حذف المسافات من الحاوية لكي يمتد حقل البحث على كامل الشاشة*/
 .container-fluid {
     padding: 0px;
@@ -195,5 +200,12 @@ time {
 @media (min-width: 1115px) {
     .search-input {
         display: none !important;
+    }
+}
+
+@media (max-width: 520px) {
+    .navbar-nav-links {
+        flex-direction: column;
+        column-gap: 20px;
     }
 }
